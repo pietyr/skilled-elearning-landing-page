@@ -1,5 +1,11 @@
 {
   "name": "workit-landing-page",
   "author": "Piotr Kisiel",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.66.1"
+  },
+  "scripts": {
+    "build": "sass --style=compressed ./scss/main.scss ./style.css"
+  }
 }
