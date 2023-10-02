@@ -1,0 +1,5 @@
+@use '../utilities/typography' as font;
+
+body {
+  font-family: font.$font;
+}
