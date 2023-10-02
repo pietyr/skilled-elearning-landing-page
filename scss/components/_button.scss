@@ -1,7 +1,24 @@
+@use '../utilities/variables' as var;
+@use '../utilities/typography' as font;
+@use 'sass:map';
+
 .button {
   text-decoration: none;
+  color: var.$white;
+  border-radius: 2rem;
+  padding: 1em 2em;
+  font-size: map.get(font.$font-sizes, 'body-s');
+  transition: 0.2s background-color;
 
   &:visited {
-    color: unset;
+    color: var.$white;
+  }
+
+  &--dark {
+    background-color: var.$yankees-blue;
+
+    &:hover {
+      background-color: var.$dark-blue-gray;
+    }
   }
 }
