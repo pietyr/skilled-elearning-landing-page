@@ -1,0 +1,10 @@
+@use '../utilities/variables' as var;
+
+.header {
+  max-width: calc(var.$max-width - 2rem);
+  padding: 1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
