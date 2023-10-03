@@ -10,4 +10,16 @@
 
     color: var.$yankees-blue;
   }
+
+  &__description {
+    font-size: map.get(font.$font-sizes, 'body-s');
+    font-weight: map.get(font.$font-weights, 'body-m');
+    line-height: map.get(font.$line-heights, 'body-s');
+
+    color: var.$roman-silver;
+
+    &--nowrap {
+      white-space: nowrap;
+    }
+  }
 }
