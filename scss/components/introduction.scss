@@ -1,4 +1,13 @@
 @use '../utilities/variables' as var;
+@use '../utilities/typography' as font;
+@use 'sass:map';
 
 .introduction {
+  &__header {
+    font-size: map.get(font.$font-sizes, 'heading-l');
+    font-weight: map.get(font.$font-weights, 'heading-l');
+    line-height: map.get(font.$line-heights, 'heading-l');
+
+    color: var.$yankees-blue;
+  }
 }
