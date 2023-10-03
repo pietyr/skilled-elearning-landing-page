@@ -6,8 +6,11 @@
   text-decoration: none;
   color: var.$white;
   border-radius: 2rem;
-  padding: 1em 2em;
+  padding: 0.625em 1.625em;
+
   font-size: map.get(font.$font-sizes, 'body-s');
+  font-weight: map.get(font.$font-weights, 'body-s');
+  line-height: map.get(font.$line-heights, 'body-s');
   transition: 0.2s background-color;
 
   &:visited {
