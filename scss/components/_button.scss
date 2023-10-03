@@ -11,7 +11,7 @@
   font-size: map.get(font.$font-sizes, 'body-s');
   font-weight: map.get(font.$font-weights, 'body-s');
   line-height: map.get(font.$line-heights, 'body-s');
-  transition: 0.2s background-color;
+  transition: 0.2s;
 
   &:visited {
     color: var.$white;
@@ -19,9 +19,21 @@
 
   &--dark {
     background-color: var.$yankees-blue;
-
+    transition-property: background-color;
     &:hover {
       background-color: var.$dark-blue-gray;
+    }
+  }
+
+  &--pink {
+    background-color: var.$orange-pink-background;
+    background-image: var.$orange-pink-gradient;
+
+    padding: 1em 1.625em;
+    transition-property: filter;
+    &:hover {
+      filter: saturate(0.8);
+      filter: opacity(0.8);
     }
   }
 }
