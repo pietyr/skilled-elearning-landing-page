@@ -1,0 +1,8 @@
+@use '../utilities/variables' as var;
+
+.courses {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: var.$max-width;
+}
