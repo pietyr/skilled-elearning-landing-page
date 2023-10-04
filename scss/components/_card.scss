@@ -1,4 +1,17 @@
+@use '../utilities/variables' as var;
+
 .card {
   flex: 1 1 21.5rem;
-  // flex-basis: 21.5rem;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+
+  &__header {
+    margin: 0;
+  }
+
+  &--pink {
+    background-color: var.$orange-pink-background;
+    background-image: var.$orange-pink-gradient;
+    color: var.$white;
+  }
 }
