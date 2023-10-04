@@ -36,4 +36,12 @@
       filter: opacity(0.8);
     }
   }
+
+  &--white {
+    color: var.$sasquatch-socks;
+
+    &:visited {
+      color: var.$sasquatch-socks;
+    }
+  }
 }
