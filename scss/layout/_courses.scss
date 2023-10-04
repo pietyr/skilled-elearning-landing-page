@@ -5,4 +5,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   max-width: var.$max-width;
+
+  padding: 1rem;
+  gap: clamp(0.625rem, 1vw, 1.875rem);
+  justify-content: center;
+  align-content: space-between;
 }
