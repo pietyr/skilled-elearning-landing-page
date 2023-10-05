@@ -1,0 +1,11 @@
+@use '../utilities/variables' as var;
+
+.footer {
+  background-color: var.$yankees-blue;
+
+  &__upper {
+    width: 100%;
+    max-width: var.$max-width;
+    padding: 2.125rem 1rem;
+  }
+}
