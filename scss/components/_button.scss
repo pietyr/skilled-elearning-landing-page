@@ -32,8 +32,7 @@
     padding: 1em 1.625em;
     transition-property: filter;
     &:hover {
-      filter: saturate(0.8);
-      filter: opacity(0.8);
+      filter: saturate(0.8) opacity(0.8);
     }
   }
 
@@ -51,9 +50,9 @@
     background-image: var.$blue-pink-gradient;
 
     transition-property: filter;
+
     &:hover {
-      filter: saturate(0.8);
-      filter: opacity(0.8);
+      filter: saturate(0.5) brightness(1.2);
     }
   }
 }
