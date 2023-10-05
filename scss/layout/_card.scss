@@ -1,0 +1,9 @@
+.card {
+  position: relative;
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+  }
+}
