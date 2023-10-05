@@ -8,4 +8,20 @@
     max-width: var.$max-width;
     padding: 2.125rem 1rem;
   }
+
+  &__lower {
+    color: var.$white;
+    margin: 0;
+    padding-bottom: 1rem;
+
+    a {
+      color: hsl(322, 87%, 55%);
+      transition-duration: 0.2s;
+      transition-property: color;
+
+      &:hover {
+        color: hsl(237, 100%, 64%);
+      }
+    }
+  }
 }
