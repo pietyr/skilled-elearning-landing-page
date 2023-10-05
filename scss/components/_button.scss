@@ -45,4 +45,15 @@
       color: var.$sasquatch-socks;
     }
   }
+
+  &--purple {
+    background-color: var.$blue-pink-background;
+    background-image: var.$blue-pink-gradient;
+
+    transition-property: filter;
+    &:hover {
+      filter: saturate(0.8);
+      filter: opacity(0.8);
+    }
+  }
 }
