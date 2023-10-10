@@ -2,8 +2,14 @@
 
 .header {
   max-width: var.$max-width;
-  padding: 1rem;
-  margin: 0 auto;
+  padding-block: clamp(1rem, 3.25vw, 1.5rem);
+  margin-inline: clamp(1rem, 4vw, 2.5rem);
+  @media (min-width: 570px) {
+    margin-inline: clamp(1rem, 5.5vw, 2.5rem);
+  }
+  @media (min-width: calc(var.$max-width + 2.5rem)) {
+    margin-inline: auto;
+  }
   display: flex;
   justify-content: space-between;
   align-items: center;
