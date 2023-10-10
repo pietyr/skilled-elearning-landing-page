@@ -6,11 +6,20 @@
   text-decoration: none;
   color: var.$white;
   border-radius: 2rem;
-  padding: 0.625em 1.625em;
+  padding-block: 0.625em;
+  padding-inline: 1.625em;
 
   font-size: map.get(font.$font-sizes, 'body-s');
   font-weight: map.get(font.$font-weights, 'body-s');
   line-height: map.get(font.$line-heights, 'body-s');
+  @media (min-width: 900px) {
+    font-size: map.get(font.$font-sizes, 'body-m');
+    font-weight: map.get(font.$font-weights, 'body-m');
+    line-height: map.get(font.$line-heights, 'body-m');
+    padding-block: 0.77778em;
+    padding-inline: 1.77778em;
+  }
+
   transition: 0.2s;
 
   &:visited {
@@ -18,6 +27,10 @@
   }
 
   &--dark {
+    // 1440 wysokosc 56px, padding-top/bottom 21px
+    // 768  wysokosc 48px, padding-top/bottom 18px
+    // 375 to samo
+
     background-color: var.$yankees-blue;
     transition-property: background-color;
     &:hover {
