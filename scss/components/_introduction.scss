@@ -8,6 +8,12 @@
     font-weight: map.get(font.$font-weights, 'heading-l');
     line-height: map.get(font.$line-heights, 'heading-l');
 
+    @media (min-width: 1000px) {
+      font-size: map.get(font.$font-sizes, 'heading-xl');
+      font-weight: map.get(font.$font-weights, 'heading-xl');
+      line-height: map.get(font.$line-heights, 'heading-xl');
+    }
+
     color: var.$yankees-blue;
   }
 
@@ -15,6 +21,12 @@
     font-size: map.get(font.$font-sizes, 'body-s');
     font-weight: map.get(font.$font-weights, 'body-m');
     line-height: map.get(font.$line-heights, 'body-s');
+
+    @media (min-width: 1000px) {
+      font-size: map.get(font.$font-sizes, 'body-m');
+      font-weight: map.get(font.$font-weights, 'body-m');
+      line-height: map.get(font.$line-heights, 'body-m');
+    }
 
     color: var.$roman-silver;
 

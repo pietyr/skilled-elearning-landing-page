@@ -27,10 +27,6 @@
   }
 
   &--dark {
-    // 1440 wysokosc 56px, padding-top/bottom 21px
-    // 768  wysokosc 48px, padding-top/bottom 18px
-    // 375 to samo
-
     background-color: var.$yankees-blue;
     transition-property: background-color;
     &:hover {
