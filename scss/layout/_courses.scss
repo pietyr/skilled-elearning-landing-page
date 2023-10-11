@@ -1,9 +1,9 @@
 @use '../utilities/variables' as var;
 
 .courses {
-  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 
   max-width: var.$max-width;
   padding-block: clamp(1rem, 3.25vw, 1.5rem);
@@ -15,12 +15,6 @@
     margin-inline: auto;
   }
 
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: var.$max-width;
-
-  padding: 1rem;
   gap: clamp(0.625rem, 1vw, 1.875rem);
   justify-content: center;
   align-content: space-between;
