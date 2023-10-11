@@ -1,7 +1,14 @@
 @use '../utilities/typography' as font;
 
+:root {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   font-family: font.$font;
+  overflow: hidden;
+  max-width: 100vw;
 }
 
 img {

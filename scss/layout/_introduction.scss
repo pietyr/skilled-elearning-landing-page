@@ -18,6 +18,10 @@
     position: relative;
   }
 
+  @media (min-width: 700px) {
+    padding-block: 4.5rem;
+  }
+
   &__wrapper-first {
     display: flex;
     flex-direction: column;
@@ -38,10 +42,13 @@
     margin: 0 auto;
     & .stats__picture-container {
       margin: 0 auto;
-    }
-    & img {
-      display: block;
-      width: 100%;
+      & img {
+        display: block;
+        width: 100%;
+        @media (min-width: 600px) {
+          width: unset;
+        }
+      }
     }
 
     @media (min-width: 600px) {
@@ -49,6 +56,12 @@
       position: absolute;
       right: 0;
       transform: translateX(2rem);
+      z-index: -1;
+    }
+
+    @media (min-width: 700px) {
+      max-width: unset;
+      transform: translateX(50%) translateY(-12.5%);
       z-index: -1;
     }
   }
