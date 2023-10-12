@@ -50,7 +50,7 @@ Screen width: 375px
 
 - Source Code: [GitHub](https://github.com/pietyr/skilled-elearning-landing-page)
 - Live Site: [GitHub Pages](https://pietyr.github.io/skilled-elearning-landing-page/)
-- Challenge solution: [Frontend Mentor](#TODO)
+- Challenge solution: [Frontend Mentor](https://www.frontendmentor.io/solutions/skilled-elearning-landing-page-ae5VUr0LNr)
 
 ## My process
 
