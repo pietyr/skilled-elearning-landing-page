@@ -10,6 +10,12 @@
     font-weight: map.get(font.$font-weights, 'body-s');
     font-size: map.get(font.$font-sizes, 'body-m');
     line-height: map.get(font.$line-heights, 'heading-s');
+
+    &--h2 {
+      font-weight: map.get(font.$font-weights, 'heading-s');
+      font-size: map.get(font.$font-sizes, 'heading-s');
+      line-height: map.get(font.$line-heights, 'heading-s');
+    }
   }
 
   &--pink {
