@@ -49,6 +49,10 @@
     color: var.$sasquatch-socks;
     padding: 0;
 
+    @media (min-width: 1100px) {
+      font-weight: map.get(font.$font-weights, 'body-s');
+    }
+
     &:visited {
       color: var.$sasquatch-socks;
     }

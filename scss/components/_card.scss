@@ -11,10 +11,22 @@
     font-size: map.get(font.$font-sizes, 'body-m');
     line-height: map.get(font.$line-heights, 'heading-s');
 
+    @media (min-width: 1100px) {
+      font-weight: map.get(font.$font-weights, 'heading-s');
+      font-size: map.get(font.$font-sizes, 'heading-s');
+      line-height: map.get(font.$line-heights, 'heading-s');
+    }
+
     &--h2 {
       font-weight: map.get(font.$font-weights, 'heading-s');
       font-size: map.get(font.$font-sizes, 'heading-s');
       line-height: map.get(font.$line-heights, 'heading-s');
+
+      @media (min-width: 1100px) {
+        font-weight: map.get(font.$font-weights, 'heading-m');
+        font-size: map.get(font.$font-sizes, 'heading-m');
+        line-height: map.get(font.$line-heights, 'heading-m');
+      }
     }
   }
 
@@ -29,5 +41,11 @@
     font-weight: map.get(font.$font-weights, 'body-m');
     font-size: map.get(font.$font-sizes, 'body-s');
     line-height: map.get(font.$line-heights, 'body-s');
+
+    @media (min-width: 1100px) {
+      font-weight: map.get(font.$font-weights, 'body-m');
+      font-size: map.get(font.$font-sizes, 'body-m');
+      line-height: map.get(font.$line-heights, 'body-m');
+    }
   }
 }
