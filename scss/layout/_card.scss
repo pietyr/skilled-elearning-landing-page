@@ -1,9 +1,25 @@
 .card {
   position: relative;
+  max-width: 435px;
+  flex: 1 1 20.5rem;
+
   margin-top: clamp(2.5rem, 7vw, 4.75rem);
+  padding: 1.5rem;
+  padding-top: 3rem;
+
+  &__header {
+    margin: 0;
+  }
+
   &__logo {
     position: absolute;
     top: 0;
     transform: translateY(-50%);
+  }
+
+  &--pink {
+    padding-top: 0;
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
   }
 }
