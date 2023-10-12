@@ -8,7 +8,7 @@
 
   &__header {
     font-weight: map.get(font.$font-weights, 'body-s');
-    font-size: map.get(font.$font-sizes, 'heading-s');
+    font-size: map.get(font.$font-sizes, 'body-m');
     line-height: map.get(font.$line-heights, 'heading-s');
   }
 
@@ -16,5 +16,12 @@
     background-color: var.$orange-pink-background;
     background-image: var.$orange-pink-gradient;
     color: var.$white;
+  }
+
+  &__text {
+    color: var.$roman-silver;
+    font-weight: map.get(font.$font-weights, 'body-m');
+    font-size: map.get(font.$font-sizes, 'body-s');
+    line-height: map.get(font.$line-heights, 'body-s');
   }
 }
